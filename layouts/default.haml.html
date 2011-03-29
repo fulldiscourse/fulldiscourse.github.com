@@ -1,0 +1,15 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %title A Brand New nanoc Site - <%= @item[:title] %>
+    %link{:href => "/stylesheets/style.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+    %meta{:content => "nanoc 3.2.0a3", :name => "generator"}/
+  %body.two-col.bp
+    #container
+      #header
+      #sidebar
+        menu
+      #content
+        =yield
+      #footer
